@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-image:url(images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: 115% 290%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo {
+    position: relative;
+    top: 4px;
+}
+
+.nav-bar_list {
+    display: flex;
+    list-style: none;
+}
+
+.item {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.item .link {
+    text-decoration: none;
+    color: hsl(233, 12%, 13%);
+}
+
+.item .link:hover {
+    color: hsl(227, 12%, 61%);
+}
+
+.btn{
+    width: 135px;
+    padding: 14px;
+    border: none;
+    outline: none;
+    background-color: hsl(12, 88%, 59%);
+    border-radius: 24px;
+    color: hsl(0, 0%, 98%);
+    box-shadow: 0px 3px 10px 0px hsl(12, 87%, 65%);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: hsl(12, 87%, 68%);
+}
+
+/* content */
+.container-content {
+    position: relative;
+    z-index: 999;
+}
+
+.container-content::after {
+    content: "";
+    background-image: url(images/bg-tablet-pattern.svg);
+    background-size: cover;
+    background-position: left;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    top: 57rem;
+    left: -18rem;
+    z-index: -1;
+}
+
+.section-up {
+    display: flex;
+    padding: 50px 0;
+}
+
+.test-content, .image{
+    width: 50%;
+}
+
+.test-content {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.title {
+    color: hsl(233, 12%, 13%);
+    font-size: 48px;
+    width: 80%;
+}
+
+.desc {
+    color: hsl(227, 12%, 61%);
+    font-size: 16px;
+    width: 65%;
+    padding-bottom: 18px;
+    line-height: 25px;
+}
+
+.section-down {
+    display: flex;
+    padding-top: 20px;
+}
+
+.section-down_test, .section-down_list-advise {
+    width: 50%;
+}
+
+.section-down_test .title {
+    font-size: 34px;
+    padding-bottom: 18px;
+}
+
+.section-down_test .desc {
+    width: 55%;
+    line-height: 25px;
+}
+
+.list-advise {
+    display: flex;
+    gap: 18px;
+    padding-bottom: 50px;
+}
+
+.number {
+    background-color: hsl(12, 88%, 59%);
+    height: 30px;
+    padding: 12px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(0, 0%, 98%);
+    border-radius: 20px;
+}
+
+.advise {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    top: 6px;
+}
+
+.advise-title {
+    color: hsl(233, 12%, 13%);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.advise-desc {
+    color: hsl(227, 12%, 61%);
+    line-height: 25px;
+}
+
+/* slide */
+.heading-comment {
+    padding-bottom: 20px;
+}
+
+.comment {
+    padding: 10rem 0;
+    text-align: center;
+    z-index: 999;
+}
+
+.comment__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(25rem, 1fr));
+    grid-gap: 8.6rem;   
+}
+
+.comment__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem .5rem;
+    padding: 1rem 3rem;
+    gap: 16px;
+    background-color: hsl(0, 0%, 97%);
+    z-index: 999;
+}
+
+.comment-name {
+    padding: 26px 0 0;
+}
+
+.comment__item--test {
+    text-align: center;
+    font-size: 1rem;
+    color: hsl(227, 12%, 61%);
+    line-height: 25px;
+}
+
+.comment__item--img {
+    position: absolute;
+    top: -40%;
+    transform: translateY(70%);
+    width: 4rem;
+    height: 4rem;
+}
+
+.hide {
+    display: none;
+}
+
+/* end slide */
+.simplify {
+    background-color: hsl(12, 88%, 59%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.simplify::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    background-image: url(images/bg-tablet-pattern.svg);
+    background-size: cover;
+    background-position: left;
+    width: 30rem;
+    height: 30rem;
+    top: -4rem;
+    left: 18rem;
+    opacity: 0.1;
+}
+
+.simplify-wide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1300px;
+    margin: 0 auto;
+    padding: 45px;
+}
+
+.btn-white {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(12, 88%, 59%);
+}
+
+.btn-white:hover {
+    color: hsl(12, 87%, 65%);
+    background-color: hsl(0, 0%, 98%);
+}
+
+/* footer */
+.footer {
+    background-color: hsl(233, 12%, 13%);
+    color: hsl(0, 0%, 98%);
+    display: flex;
+    padding: 4rem;
+    justify-content: space-between;
+}
+
+.footer__image {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.footer__image .footer-logo {
+    color: hsl(0, 0%, 98%);
+}
+
+.img__link img {
+    padding-right: 12px;
+    cursor: pointer;
+}
+
+.footer__contact {
+    width: 33.33333%;
+}
+
+.footer__contact--nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__contact--nav ul,li,a {
+    list-style: none;
+    text-decoration: none;
+    color: hsl(0, 0%, 98%);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer__contact--nav li {
+    padding-bottom: 14px;
+    cursor: pointer;
+}
+
+.footer__contact--nav a:hover {
+    color: hsl(12, 88%, 59%);
+}
+
+.footer__counsel {
+    width: 25.3333%;
+}
+
+.counsel__test input {
+    padding: 20px;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+
+.counsel__test .btn-go {
+    padding: 20px;
+    height: 40px;
+    width: 70px;
+    border-radius: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: hsl(12, 88%, 59%);
+    color: hsl(0, 0%, 98%);
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.counsel__test .btn-go:hover {
+    background-color: hsl(12, 87%, 68%);
+}
+
+.footer__counsel p {
+    color: hsl(227, 12%, 61%);
+    font-size: 12px;
+    padding-top: 80px;
+    padding-left: 70px;
+}
